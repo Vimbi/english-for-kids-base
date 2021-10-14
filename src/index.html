@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for kids</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__content" id="top">
+        <div class="cover"></div>
+        <form class="login">
+          <h2 class="login__title">Login</h2>
+          <input type="text" class="login__input" placeholder="Login">
+          <input type="text" class="login__input" placeholder="Password">
+          <div class="login__btns">
+            <div class="cancel-btn">Cancel</div>
+            <div class="login-btn login-btn__enter">Login</div>
+          </div>
+        </form>
+        <header class="header">
+          <div class="container container__header">
+            <div class="menu-icon">
+              <a class="menu-icon__toggle" href="#top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <ul class="nav" id="nav"></ul>
+            <div class = "logo">
+              <h1 class="page-title">
+                <a href="#" class="logo__link" id="page-title-text">English for kids</a>
+              </h1>
+            </div>
+            <div class="header__btns">
+              <div class="toggle" id="toggle">
+                <input type="checkbox" id="toggle-input" class="toggle__input">
+                <label for="toggle-input" class="toggle__label">
+                  <span class="toggle__mode toggle__mode--train">Train</span>
+                  <span class="toggle__mode toggle__mode--play">Play</span>
+                </label>
+              </div>
+              <div class="stats-btn">Stats</div>
+              <div class="login-btn login-btn__open">Login</div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container" id="main-container">
+            <ul class="cards__list">
+            </ul>
+          </div>
+        </main>
+        <audio src="./audio/error.mp3" class="audio-error"></audio>
+        <audio src="./audio/correct.mp3" class="audio-correct"></audio>
+        <audio src="./audio/success.mp3" class="audio-success"></audio>
+        <audio src="./audio/failure.mp3" class="audio-failure"></audio>
+      </div>
+      <footer class="footer">
+        <div class="container container__footer">
+          <div class="footer__copy">
+            <a href="https://github.com/Vimbi" class="footer__link" target="_blank">
+              <span class="footer__author">Vladimir Vildanov</span>
+              <img src="./img/icons/github.png" alt="github" class="footer__link-img">
+            </a>
+            <span class="footer__info">2021</span>
+          </div>
+          <div class="footer__course">
+            <a href="https://rs.school/js/" class="footer__link" target="_blank"><img src="./img/icons/rs_school_js.svg" alt="rs_school" class="footer__link-img--rsschool">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <template id="categoryTemplate">
+      <div class="card">
+        <div class="card__front">
+          <div class="card__image">
+            <img src="" alt="" class="card__img">
+          </div>
+          <div class="card__desc">
+            <h3 class="card__title"></h3>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="cardTemplate">
+      <div class="card card--word">
+        <div class="card__front">
+          <div class="card__image">
+            <img src="" alt="" class="card__img">
+          </div>
+          <div class="card__desc card__desc--word">
+            <h3 class="card__title"></h3>
+            <div class="card__rotate"></div>
+          </div>
+          <audio src="" class="card__audio"></audio>
+        </div>
+        <div class="card__back">
+          <div class="card__image">
+            <img src="./img/horse.jpg" alt="" class="card__img">
+          </div>
+          <div class="card__desc card__desc--word">
+            <h3 class="card__translation">Лошадь</h3>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="btnsTemplate">
+      <div class="buttons">
+        <button class="buttons__btn">Start game</button>
+      </div>
+    </template>
+
+    <template id="statistics">
+
+    </template>
+
+    <div class="overlay"></div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, cursive;
+  background-color: rgb(246, 245, 250);
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+  transition: all .3s;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__content {
+    flex: 1;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 93.75%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bigPhones {
+      flex-wrap: wrap;
+      row-gap: 15px;
+      column-gap: 20px;
+    }
+
+    @include phones {
+      column-gap: 5px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+svg {
+  display: block;
+}
